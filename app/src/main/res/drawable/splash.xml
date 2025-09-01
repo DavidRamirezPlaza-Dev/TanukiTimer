@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/iconosplash"
+        android:gravity="center"
+        android:height="160dp"
+        android:width="140dp"
+        android:left="20dp"/>
+</layer-list>

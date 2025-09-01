@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mitosfuria"
+    tools:context=".Mitos.timerTorneoFuria">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:contentDescription="@string/tanuki_logo"
+                android:src="@drawable/logo" />
+
+            <Space android:layout_width="250sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:fontFamily="@font/archivo"
+                android:text="@string/timer"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="@string/buena_suerte"
+                android:textAlignment="center"
+                android:fontFamily="@font/condensed"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/timerTextViewFuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="40sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:textSize="80sp"
+                android:textAlignment="center"
+                android:text="@string/_03_00"
+                android:textColor="@color/white"
+                android:fontFamily="@font/russo_one"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnComenzarMesaMitosTF"
+                android:contentDescription="@string/comenzar"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btncomenzarmitos" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/mesaFuria"
+                android:layout_width="wrap_content"
+                android:background="@color/fondoTransparente"
+                android:layout_height="70sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/russo_one"
+                android:textSize="30sp"
+                android:autofillHints="Número de Mesa"
+                android:labelFor="@+id/mesaFuria"
+                android:inputType="text"
+                android:focusable="false"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/jugador1MitosTorneoFuria"
+                android:layout_width="wrap_content"
+                android:background="@color/fondoTransparente"
+                android:layout_height="40sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/russo_one"
+                android:textSize="15sp"
+                android:autofillHints="Jugador 1"
+                android:labelFor="@+id/jugador1MitosFuria"
+                android:inputType="text"
+                android:focusable="false"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/jugador2MitosTorneoFuria"
+                android:layout_width="wrap_content"
+                android:background="@color/fondoTransparente"
+                android:layout_height="40sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/russo_one"
+                android:textSize="15sp"
+                android:autofillHints="Jugador 2"
+                android:labelFor="@+id/jugador2MitosTorneoFuria"
+                android:inputType="text"
+                android:focusable="false"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

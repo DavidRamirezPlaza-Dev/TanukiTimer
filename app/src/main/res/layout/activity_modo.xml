@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/modo"
+    tools:context=".Principal">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/tanuki_logo" />
+            <Space android:layout_width="250sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="@string/modo"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/archivo"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:fontFamily="@font/condensed"
+                android:text="@string/de_juego"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="300sp"
+                android:textAlignment="center"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/condensed"
+                android:text="@string/textoModo" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btnTorneo"
+                android:contentDescription="@string/btnTorneo"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginTop="50sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/btntorneo"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"/>
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnCasual"
+                android:contentDescription="@string/btnCasual"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/btncasual"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mitos.eleccionNuevaEra">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mitos"
+        tools:context=".Mitos.mitosPrincipal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/tanuki_logo"
+                    android:src="@drawable/logo" />
+
+                <Space android:layout_width="250sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:fontFamily="@font/archivo"
+                    android:text="@string/n_mero"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:fontFamily="@font/condensed"
+                    android:text="@string/de_mesa"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/textoMesaMitos"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/condensed"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:ignore="TextSizeCheck" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/n_mesa"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lilita"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/numeroMesaMitos"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:autofillHints="@string/mesaMitostext"
+                    android:background="@drawable/texttrasparente"
+                    android:ems="10"
+                    android:fontFamily="@font/russo_one"
+                    android:hint="@string/n_mesa"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint"
+                    tools:ignore="LabelFor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/jugador_1"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lilita"
+                    android:textColor="@color/black">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/jugador1mitos"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/texttrasparente"
+                    android:hint="@string/jugador_1"
+                    android:textAlignment="center"
+                    android:inputType="text"
+                    android:fontFamily="@font/russo_one"
+                    android:textColorHint="@color/hint"
+                    android:textColor="@color/black"
+                    android:importantForAutofill="no">
+                </EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/jugador_2"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lilita"
+                    android:textColor="@color/black">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/jugador2mitos"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/texttrasparente"
+                    android:hint="@string/jugador_2"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/russo_one"
+                    android:textColorHint="@color/hint"
+                    android:textColor="@color/black"
+                    android:importantForAutofill="no">
+                </EditText>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnAceptarMesaMitos"
+                    android:contentDescription="@string/btnaceptar"
+                    android:layout_width="200dp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/btnaceptarmitos" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/principal"
+
+    tools:context=".Principal">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/tanuki_logo" />
+            <Space android:layout_width="250sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="@string/tanuki"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/archivo"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:fontFamily="@font/condensed"
+                android:text="@string/timer_principal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="300sp"
+                android:textAlignment="center"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/condensed"
+                android:textColor="@color/white"
+                android:text="@string/textoBienvenidaPrincipal" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btnMitos"
+                android:contentDescription="@string/btnmitosyleyendas"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginBottom="20sp"
+
+                android:background="@drawable/btnmitos" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnVanguard"
+                android:contentDescription="@string/btnvanguard"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/btnvanguard"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnPokemon"
+                android:contentDescription="@string/btnpokemon"
+                android:layout_width="200dp"
+                android:layout_height="70sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/btnpokemon"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:autoLink="web"
+                android:textColorLink="@color/white"
+                android:text="@string/www_tanukipuq_cl"
+                android:textSize="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/russo_one"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

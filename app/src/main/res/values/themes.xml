@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TanukiTimer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/naranjoMitos</item>
+    </style>
+
+
+    <!-- Splash screen theme -->
+    <style name="theme.app.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/naranjoMitos</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.TanukiTimer</item>
+
+    </style>
+</resources>

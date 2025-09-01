@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mitos"
+    tools:context=".Mitos.eleccionNuevaEra"
+    tools:ignore="Overdraw">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".Mitos.mitosPrincipal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="120sp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/tanuki_logo"
+                    android:src="@drawable/logo" />
+
+                <Space android:layout_width="250sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    android:textStyle="bold"
+                    android:fontFamily="@font/archivo"
+                    android:text="@string/nueva"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:fontFamily="@font/condensed"
+                    android:text="@string/era"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/condensed"
+
+                    android:text="@string/textoFormatoNuevaEra"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnFuria"
+                    android:layout_width="200dp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btnfuria"
+                    android:contentDescription="@string/btnfuria" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnImperio"
+
+                    android:layout_width="200dp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/btnimperio"
+                    android:contentDescription="@string/btnimperio" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
