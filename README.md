@@ -24,6 +24,7 @@ Cuenta con una voz para avisar los tiempos importantes durante el juego.
 
 ## Instalación
 git clone https://github.com/DavidRamirezPlaza-Dev/TanukiTimer.git
+
 cd TanukiTimer
 
 ## Licencia
