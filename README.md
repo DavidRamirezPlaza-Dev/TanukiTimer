@@ -1,7 +1,7 @@
 # TanukiTimer
 
 **Descripción**  
-Aplicación móvil (no responsive) para TanukiPUQ, creada por David Ramírez Plaza.
+Aplicación móvil para TanukiPUQ, creada por David Ramírez Plaza.
 
 ## Autor
 
