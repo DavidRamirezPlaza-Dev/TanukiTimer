@@ -15,16 +15,16 @@ Utilizada principalmente para los enfrentamientos TCG de Pokemon, Mitos y Leyend
 
 Cuenta con una voz para avisar los tiempos importantes durante el juego.
 
-## Requisitos
-
-- Integración con TanukiPUQ (https://tanukipuq.cl).
-
 ## Estructura del repositorio
 
 - `Assets/` — Recursos gráficos y multimedia.
 - `Scripts/` — Lógica y funcionalidades del temporizador.
 - `README.md` — Este archivo.
 - Otros archivos de configuración según la plataforma utilizada.
+
+## Instalación
+git clone https://github.com/DavidRamirezPlaza-Dev/TanukiTimer.git
+cd TanukiTimer
 
 ## Licencia
 
